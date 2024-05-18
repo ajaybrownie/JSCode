@@ -1,0 +1,30 @@
+// array for nfts
+const NFTs = []
+
+// minting nft function
+function mintNFT(nft) {
+    NFTs.push(nft);
+    return nft;
+}
+
+//listing of nfts
+function listNFTs() {
+    for (let i = 0; i < NFTs.length; i++) {
+        console.log(NFTs[i]);
+    }
+}
+
+// display total nfts
+function getTotalSupply() {
+    console.log("Total Supply: " + NFTs.length)
+}
+
+listNFTs();
+
+mintNFT("Nike", "7.5", "Black");
+mintNFT("Gucci" , "9", "Black");
+mintNFT("Adidas", "7", "Bown");
+mintNFT("Fila", "8.5", "White");
+listNFTs();
+
+getTotalSupply();
